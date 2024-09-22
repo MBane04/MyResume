@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Mason Bane
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mason Bane} \\ \vspace{1pt}
+    \small 817-487-5148 $|$ \href{mailto:mbane0525@gmail.com}{\underline{mbane0525@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mason-bane/}{\underline{linkedin.com/in/mason-bane/}} $|$
+    \href{https://github.com/MBane04}{\underline{github.com/MBane04}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarleton State University}{Stephenville, TX}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2022 -- May 2026}
+    \resumeSubheading
+      {Hill College}{Hillsboro, TX}
+      {Associate's in Liberal Arts}{Aug. 2019 -- Sept. 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2024 -- Present}
+      {Tarleton State University}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Contriubted to the development and optimization of various N-Body simulations utilizing C/C++, enhancing computational efficiency and accuracy through advanced algorithms and parallel processing with CUDA.}
+        \resumeItem{Collaborated with interdisciplinary teams to visualize complex data sets using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
+        \resumeItem{Conducted rigorous testing and debugging of simulation software, ensuring robust performance and reliability while documenting processes to facilitate knowledge transfer and future research initiatives.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Undergraduate Technology Specialist}{August 2024 -- Present}
+      {Tarleton State University}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Managed and maintained a high-performance computer lab dedicated to research initiatives, ensuring optimal functionality and user accessibility for students and faculty.}
+        \resumeItem{Executed routine system updates, hardware maintenance, and troubleshooting, leveraging technical expertise to enhance system performance and reliability.}
+        \resumeItem{Maintained a clean and organized lab environment, promoting a collaborative workspace that fosters innovation and productivity.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Lab Instructor, Texas Government}{January 2023 -- December 2023}
+      {Tarleton State University}{Stephenville, TX}
+      \resumeItemListStart
+        \resumeItem{Guided and supported students in policy research and analysis, facilitating the exploration of bills and regulations to enhance critical thinking and analytical skills.}
+        \resumeItem{Enhanced face-to-face communication and interpersonal skills by mentoring students and addressing their inquiries, creating a supportive and inclusive classroom atmosphere.}
+        \resumeItem{Conducted regular meetings and collaborated with the lecture professor and fellow lab leaders to align objectives and improve instructional methodologies, ensuring a cohesive educational experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Left Atrial Arrythmia N-body Simulation} $|$ \emph{C, CUDA, OpenGL, Blender, Bash}}{August 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a multidisciplinary team to develop an accurate N-Body model of the left atrium, integrating anatomical and physiological data while validating custom algorithms for simulating electrophysiological behavior}
+            \resumeItem{Presented simulation outcomes at academic conferences, showcasing the tool’s potential to transform training methodologies for medical professionals and improve clinical decision-making in arrhythmia treatment.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MicroPlastic-Polymer Interactions} $|$ \emph{C/C++, CUDA, OpenGL, Bash}}{May 2024 -- August 2024}
+          \resumeItemListStart
+            \resumeItem{Contributed to the development and optimization a CUDA-based N-body simulation of Microplastic-Polymer interactions leveraging NVIDIA's CUDA technology for parallel processing and OpenGL for real-time 3D visualization, enhancing computational efficiency and user experience.}
+            \resumeItem{Crafted a user-friendly interface for toggling simulation features, providing enhanced visual cues and aiding in the understanding of complex phenomena.}
+            \resumeItem{Collaborated with a multidisciplinary team to define requirements, design features, and refine the simulation tool, ensuring alignment with project goals and user needs.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, HTML/CSS, Java} \\
+     \textbf{Frameworks}{: React, Swing} \\
+     \textbf{Developer Tools}{: Git, Visual Studio, Linux, VS Code, Blender} \\
+     \textbf{Libraries}{: OpenGL, CUDA}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
