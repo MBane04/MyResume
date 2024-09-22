@@ -10,5 +10,5 @@ This is my resume programmed in LaTex, it is runnable in Overleaf and by using s
 # **Step 3:** 
 ## Windows & Linux
 ### Use the following command:
-'pdfLatex <filename>'
+`pdfLatex <filename>`
 compiles the file into a pdf
