@@ -1,4 +1,4 @@
-This is my resume programmed in LaTex, it is runnable in Overleaf and by using shell commands:
+This is my resume programmed in LaTex, it is runnable in [Overleaf](https://www.overleaf.com/), an online LaTex compiler and/or by using shell commands:
 
 # **Step 1:**
 ## Install LaTex [here](https://miktex.org/download)
