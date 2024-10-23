@@ -1,14 +1,24 @@
-This is my resume programmed in LaTex, it is runnable in [Overleaf](https://www.overleaf.com/), an online LaTex compiler and/or by using shell commands:
+# Resume in LaTeX
 
-# **Step 1:**
-## Install LaTex [here](https://miktex.org/download)
+This repository contains my resume, created using LaTeX. You can easily compile it using [Overleaf](https://www.overleaf.com/) or by using local shell commands.
 
+## Getting Started
 
-# **Step 2:**
-## Navigate to the directory where this file is located
+### Option 1: Using Overleaf
+1. Open [Overleaf](https://www.overleaf.com/).
+2. Upload the `.tex` file to your project.
+3. Click "Recompile" to generate your PDF.
 
-# **Step 3:** 
-## Windows & Linux
-### Use the following command:
-`pdfLatex <filename>.tex`
-compiles the file into a pdf
+### Option 2: Local Compilation
+To compile the resume locally, follow these steps:
+
+#### Step 1: Install LaTeX
+Download and install LaTeX from [MiKTeX](https://miktex.org/download).
+
+#### Step 2: Navigate to the Directory
+Open your terminal or command prompt and navigate to the directory containing the `.tex` file.
+
+#### Step 3: Compile the Document
+For Windows and Linux, run the following command:
+```bash
+pdflatex <filename>.tex
