@@ -13,7 +13,7 @@ This repository contains my resume, created using LaTeX. You can easily compile 
 To compile the resume locally, follow these steps:
 
 #### Step 1: Install LaTeX
-Download and install LaTeX from [MiKTeX](https://miktex.org/download).
+Download and install LaTeX by following the instructions from [MiKTeX](https://miktex.org/download).
 
 #### Step 2: Navigate to the Directory
 Open your terminal or command prompt and navigate to the directory containing the `.tex` file.
