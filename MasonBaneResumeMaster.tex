@@ -68,6 +68,10 @@
   }
 }
 
+\newcommand{\educationDetail}[1]{%
+  \vspace{-4pt}\item[]\small{#1}\vspace{-2pt}%
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -119,15 +123,23 @@
 \end{center}
 
 
+%-----------SUMMARY-----------
+\vspace{-2pt}
+\textbf{Summary:} Computer Science student (Computer Engineering) targeting embedded firmware and hardware/software integration roles. Proficient in microcontroller programming, low-level C/C++ and ARM Assembly, and circuit design. Strong mathematical/analytical skills with research experience.
+\vspace{-4pt}
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Tarleton State University \textnormal{ - GPA: 3.69}}{Stephenville, TX}
-      {B.S. in Computer Science, Concentration in Computer Engineering, Minor in Mathematics}{Aug. 2022 -- May 2026}
-    \resumeSubheading
+      {Tarleton State University \textnormal}{Stephenville, TX}
+      {Bachelor of Science in Computer Science, Concentration in Computer Engineering}
+      {Aug. 2022 -- May 2026 (Expected)}
+      \educationDetail{Minor in Mathematics}
+      \educationDetail{GPA: 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+   \resumeSubheading
       {Hill College}{Hillsboro, TX}
-      {Associate's in Liberal Arts}{Aug. 2019 -- Sept. 2023}
+      {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
   \resumeSubHeadingListEnd
 
 
@@ -139,8 +151,8 @@
       {Undergraduate Research Assistant}{May 2024 -- Present}
       {Tarleton State University}{Stephenville, TX}
       \resumeItemListStart
-        \resumeItem{Contriubted to the development and optimization of various N-Body simulations utilizing C/C++, enhancing computational efficiency and accuracy through advanced algorithms and parallel processing with CUDA.}
-        \resumeItem{Collaborated with interdisciplinary teams to visualize complex data sets using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
+        \resumeItem{Contributed to the development and optimization of various N-Body simulations utilizing C/C++, enhancing computational efficiency and accuracy through advanced algorithms and parallel processing with CUDA.}
+        \resumeItem{Collaborated with interdisciplinary teams to create digital twins to model complex problems using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
         \resumeItem{Conducted rigorous testing and debugging of simulation software, ensuring robust performance and reliability while documenting processes to facilitate knowledge transfer and future research initiatives.}
       \resumeItemListEnd
       
@@ -155,22 +167,21 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Undergraduate Technology Specialist}{August 2024 -- Present}
+      {Undergraduate Technology Specialist}{Aug. 2024 -- Present}
       {Tarleton State University}{Stephenville, TX}
       \resumeItemListStart
-        \resumeItem{Managed and maintained a high-performance computer lab dedicated to research initiatives, ensuring optimal functionality and user accessibility for students and faculty.}
-        \resumeItem{Executed routine system updates, hardware maintenance, and troubleshooting, leveraging technical expertise to enhance system performance and reliability.}
+        \resumeItem{Managed and maintained 15 devices in a high-performance computer lab dedicated to research initiatives}
+        \resumeItem{Performed system updates, hardware maintenance, and technical support, resolving issues promptly to minimize downtime and maintain optimal performance.}
         \resumeItem{Maintained a clean and organized lab environment, promoting a collaborative workspace that fosters innovation and productivity.}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {Undergraduate Lab Instructor, Texas Government}{January 2023 -- December 2023}
-      {Tarleton State University}{Stephenville, TX}
-      \resumeItemListStart
-        \resumeItem{Guided and supported students in policy research and analysis, facilitating the exploration of bills and regulations to enhance critical thinking and analytical skills.}
-        \resumeItem{Conducted regular meetings and collaborated with the lecture professor and fellow lab leaders to align objectives and improve instructional methodologies, ensuring a cohesive educational experience.}
-      \resumeItemListEnd
-
+%    \resumeSubheading
+%      {Undergraduate Lab Instructor, Texas Government}{January 2023 -- December 2023}
+%      {Tarleton State University}{Stephenville, TX}
+%      \resumeItemListStart
+%        \resumeItem{Guided and supported students in policy research and analysis, facilitating the exploration of bills and regulations to enhance critical thinking and analytical skills.}
+%        \resumeItem{Conducted regular meetings and collaborated with the lecture professor and fellow lab leaders to align objectives and improve instructional methodologies, ensuring a cohesive educational experience.}
+%      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -178,30 +189,42 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{N-body Simulation of Left Atrial Arrythmias } $|$ \emph{C/C++, CUDA, OpenGL, Blender, Bash}}{August 2024 -- Present}
+          {\textbf{N-body Digital Twin of the Left Atrium } $|$ \emph{C/C++, CUDA, OpenGL, Blender, Bash}}{Aug. 2024 -- Present}
           \resumeItemListStart
-            \resumeItem{Collaborated with a multidisciplinary team to develop an accurate N-Body model of the left atrium, integrating anatomical and physiological data while validating custom algorithms for simulating electrophysiological behavior and chaotic atrial arrhythmias, exploring potential treatments and enhancing understanding of the underlying causes of atrial fibrillation.}
-            \resumeItem{Presented simulation outcomes at academic conferences, showcasing the tool’s potential to transform training methodologies for medical professionals and improve clinical decision-making in arrhythmia treatment.}
+				\resumeItem{Developed a CUDA-accelerated N-body model of the left atrium to simulate chaotic atrial arrhythmias, integrating anatomical data to explore potential treatments for atrial fibrillation.}
+				\resumeItem{Built an interactive GUI using ImGui to streamline parameter adjustment and visualization, making the complex simulation accessible to a broader, non-technical audience.}
+				\resumeItem{Presented findings at academic conferences, demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{N-Body Simulation of MicroPlastic-Polymer Interactions} $|$ \emph{C/C++, CUDA, OpenGL, Bash}}{May 2024 -- August 2024}
+%      \resumeProjectHeading
+%          {\textbf{N-Body Simulation of MicroPlastic-Polymer Interactions} $|$ \emph{C/C++, CUDA, OpenGL}}{May 2024 -- Aug. 2024}
+%          \resumeItemListStart
+%            \resumeItem{Contributed to the development and optimization a CUDA-based N-body simulation of Microplastic-Polymer interactions leveraging NVIDIA's CUDA technology for parallel processing and OpenGL for real-time 3D visualization, enhancing computational efficiency and user experience.}
+%            \resumeItem{Crafted a user-friendly interface for toggling simulation features, providing enhanced visual cues and aiding in the understanding of complex phenomena.}
+%            \resumeItem{Collaborated with a multidisciplinary team to define requirements, design features, and refine the simulation tool, ensuring alignment with project goals and user needs.}
+%          \resumeItemListEnd
+       \resumeProjectHeading
+          {\textbf{Analog Pink Noise Generator Circuit} $|$ \emph{LTSpice, Python, MATLAB, Breadboarding}}{Aug. 2025 -- Dec. 2025}
           \resumeItemListStart
-            \resumeItem{Contributed to the development and optimization a CUDA-based N-body simulation of Microplastic-Polymer interactions leveraging NVIDIA's CUDA technology for parallel processing and OpenGL for real-time 3D visualization, enhancing computational efficiency and user experience.}
-            \resumeItem{Crafted a user-friendly interface for toggling simulation features, providing enhanced visual cues and aiding in the understanding of complex phenomena.}
-            \resumeItem{Collaborated with a multidisciplinary team to define requirements, design features, and refine the simulation tool, ensuring alignment with project goals and user needs.}
+            \resumeItem{Designed and prototyped a BJT-based pink noise generator with active filter stage using LTSpice for simulation and breadboarding for physical implementation.}
+            \resumeItem{Developed Python scripts to quantitatively compare simulation results with an ideal pink noise spectrum, guiding component selection and filter tuning for improved accuracy.}
+            \resumeItem{Built a physical demonstration circuit with audio output, successfully verifying simulation models against real-world performance.}
+             \resumeItem{Collaborated in a two-person team to present comprehensive design methodology, results, and data-driven decision process to peers and professors.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
 
 %
-%-----------PROGRAMMING SKILLS-----------
+%-----------Technical Skills-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C/C++, Java, Bash} \\
-     \textbf{Developer Tools}{: Git, GitHub, Linux, Microsoft PowerPoint, Microsoft Excel, Visual Studio, VSCode, LTSpice, Blender, MATLAB} \\
-     \textbf{Libraries}{: OpenGL, CUDA, ImGui}
+     \textbf{Programming Languages}{: C/C++, Python, Java, ARM Assembly, Bash} \\
+     \textbf{Embedded \& Hardware}{: TIVA-C Series (TM4C), Arduino, Raspberry Pi, GPIO} \\
+     \textbf{Simulation \& Design Tools}{: LTSpice, MATLAB, Blender} \\
+     \textbf{Systems \& Development}{: Git/GitHub, Linux, Visual Studio, VS Code, Make/CMake} \\
+     \textbf{Parallel Computing \& Graphics}{: CUDA, OpenGL, ImGui} \\
+             
     }}
  \end{itemize}
 
