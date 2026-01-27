@@ -125,7 +125,7 @@
 
 %-----------SUMMARY-----------
 \vspace{-2pt}
-\textbf{Summary:} Computer Science student targeting software engineering roles, with a strong foundation in C++ and performance-oriented development. Brings hands-on experience in high-performance computing (CUDA) from contributing to an NIH-funded research project, alongside proven analytical and problem-solving skills.
+\textbf{Summary:} Computer Science student focused on the development and integration of high-fidelity C/C++ simulations and analysis tools on Linux. Experience spans the full lifecycle—from optimizing CUDA kernels for real-time, large-scale system simulation (20,000+ nodes) to hardening tooling for validation and deployment. Effective collaborator skilled with Git, CMake, and cross-disciplinary teams. U.S. citizen, clearance-eligible.
 \vspace{-10pt}
 
 %-----------EDUCATION-----------
@@ -135,8 +135,10 @@
       {Tarleton State University \textnormal}{Stephenville, TX}
       {Bachelor of Science in Computer Science, Concentration in Computer Engineering}
       {Aug. 2022 -- May 2026 (Expected)}
-      \educationDetail{Minor in Mathematics}
-      \educationDetail{GPA: 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+      \vspace{-1pt}
+      \educationDetail{\textit{Minor in Mathematics}}
+      \educationDetail{\underline{GPA:} 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+      \educationDetail{\underline{Relevant Coursework:} Data Structures \& Algorithms, Operating Systems, Computer Architecture, Software Engineering, Parallel Programming, Procedural Programming, C++ Programming, Mathematical Modeling}
    \resumeSubheading
       {Hill College}{Hillsboro, TX}
       {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
@@ -152,9 +154,9 @@
      {Undergraduate Research Assistant - Lead Programmer}{May 2024 -- Present}
      {Tarleton State University}{Stephenville, TX}
      \resumeItemListStart
-       \resumeItem{Developed and optimized of various N-Body simulations utilizing C/C++, enhancing computational efficiency and accuracy through advanced algorithms and parallel processing with CUDA.}
-       \resumeItem{Collaborated with interdisciplinary teams to create digital twins to model complex problems using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
-       \resumeItem{Conducted rigorous testing and debugging of simulation software, ensuring robust performance and reliability while documenting processes to facilitate knowledge transfer and future research initiatives.}
+       \resumeItem{Developed and optimized multiple CUDA/C++ N-body simulations across diverse domains (cardiac arrhythmias, microplastic coagulation), profiling kernels and tuning memory access patterns to achieve real-time performance on lab hardware.}
+       \resumeItem{Led complete migration from legacy OpenGL rendering to modern C++/ImGui framework, delivering an interactive GUI that transformed usability and enabled non-programmers to run complex parameter sweeps independently.}
+       \resumeItem{Collaborated across disciplines to bridge computer science and biomedical research, translating vaious scientific concepts into computational models and simulation requirements.}
      \resumeItemListEnd
      \vspace{-1pt}
     
@@ -162,9 +164,9 @@
     {Undergraduate Technology Specialist - HPC Lab Manager}{Aug. 2024 -- Present}
     {Tarleton State University}{Stephenville, TX}
     \resumeItemListStart
-    \resumeItem{Managed 15+ Linux systems in production-like research environment, ensuring 99\%+ uptime through proactive maintenance, hardware diagnostics, and rapid incident response}
-    \resumeItem{Diagnosed and resolved complex hardware/software issues including memory failures, storage degradation, and OS configuration problems, minimizing system downtime and maintaining optimal performance}
-    \resumeItem{Developed and maintained comprehensive documentation for system configurations, troubleshooting procedures, and lab protocols, enabling knowledge sharing and process standardization}
+    \resumeItem{Maintained 15+ Linux systems in production-like research environment, driving 99\%+ uptime via proactive patching, hardware diagnostics, and rapid incident response.}
+    \resumeItem{Diagnosed memory, storage, and OS configuration issues; validated fixes and documented runbooks to keep simulation and tooling stacks consistent.}
+    \resumeItem{Standardized configurations with Git-backed docs and scripts, improving onboarding and reducing integration drift across lab nodes.}
     \resumeItemListEnd
     \vspace{-10pt}
   \resumeSubHeadingListEnd
@@ -177,51 +179,37 @@
     
 
     \resumeProjectHeading
-			{\textbf{N-body Digital Twin of the Left Atrium} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C, CUDA }}{Aug. 2024 -- Present}
+            {\textbf{N-body Digital Twin of the Left Atrium} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C, CUDA}}{Aug. 2024 -- Present}
          \resumeItemListStart
-				\resumeItem{Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial arrhythmias in near real-time.}
-				\resumeItem{Developed an intuitive C++/ImGui interface to control simulation parameters and visualize outputs, bridging the gap between complex computational models and end-user (research/clinical) requirements.}
-				\resumeItem{Presented findings at academic conferences, demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.}
+                \resumeItem{Engineered parallel CUDA kernels for a 20,000+ node cardiac mesh, modeling electrical propagation and arrhythmia dynamics with near real-time performance for clinical research applications.}
+                \resumeItem{Integrated cardiac physiology models (action potential dynamics, refractory periods, conduction velocities) into computational framework, bridging biomedical science and high-performance computing.}
+                \resumeItem{Built parameter control interface enabling medical researchers to sweep simulation variables (pacing frequency, tissue properties) without C++ knowledge, accelerating model verification and analysis cycles.}
          \resumeItemListEnd
            \vspace{-2pt}
 
          \resumeProjectHeading
-   {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
-   \resumeItemListStart
-   \resumeItem{Implementing a secure data pipeline on an STM32H5 MCU, utilizing Arm TrustZone and the Secure Manager to create a hardware-rooted chain of trust for environmental sensor data.}
-   \resumeItem{Developing drivers and application logic to interface with a Bosch BME280 temperature, humidity, and pressure sensor via I2C communication protocol.}
-   \resumeItem{Structuring firmware to cryptographically sign sensor readings within the secure processing environment for tamper-evident logging.}
-   \resumeItem{Utilizing STM32CubeIDE and the HAL for peripheral configuration and hardware security module (HSM) management as a foundation for secure telemetry systems.}
-   \resumeItemListEnd
-   \vspace{-2pt}
-   
-
-            
-          
-    %  \resumeProjectHeading
-    %      {\textbf{N-Body Simulation of Microplastic Coagulation} $|$ \emph{C/C++, CUDA, Linux, OpenGL}}{May 2024 -- Aug. 2024}
-    %      \resumeItemListStart
-    %        \resumeItem{Contributed to the development and optimization a CUDA-based N-body simulation of micro-plastic removal from water using plant polymers -- leveraging NVIDIA's CUDA technology for parallel processing and OpenGL for real-time 3D visualization, enhancing computational efficiency and user experience.}
-    %        \resumeItem{Crafted a user-friendly interface for toggling simulation features, providing enhanced visual cues and aiding in the understanding of complex phenomena.}
-    %        \resumeItem{Collaborated with a multidisciplinary team to define requirements, design features, and refine the simulation tool, ensuring alignment with project goals and user needs.}
-    %      \resumeItemListEnd
+          {\textbf{N-Body Simulation of Microplastic Coagulation} $|$ \emph{C/C++, CUDA, Linux, OpenGL}}{May 2024 -- Aug. 2024}
+          \resumeItemListStart
+            \resumeItem{Optimized CUDA-based microplastic coagulation simulation; improved kernel performance and validated results against expected aggregation behaviors.}
+            \resumeItem{Developed OpenGL visualization with configurable simulation parameters, enabling rapid experimentation and clear presentation of research findings.}
+              \resumeItem{Designed simulation to mirror lab setups and de-risk wet-lab work by vetting force models, mixing behavior, and parameter ranges in a GPU sandbox before physical experiments.}
+          \resumeItemListEnd
 
     \resumeSubHeadingListEnd
         \vspace{-12pt}
 
 
 
-%
 %-----------Technical Skills-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-\textbf{Programming Languages}{: C, C++, Python, ARM Assembly, Java, Bash, HTML/CSS/JavaScript} \\
-\textbf{Parallel Computing \& Graphics}{: CUDA, OpenGL, ImGui, MATLAB, STM32CubeIDE} \\
-\textbf{Systems \& Development}{: Git/GitHub, Linux, CMake, Visual Studio, VS Code, GDB} \\
-\textbf{Microcontroller Platforms}{: STM32, TIVA-C, Arduino, Raspberry Pi} \\
-\textbf{Design \& Simulation}{: LTSpice, Blender} 
-}}
+    \textbf{Languages:} C, C++, Python, Java, Bash, ARM Assembly \\
+    \textbf{Systems \& Platforms:} Linux, STM32 (Basics) \\
+    \textbf{Modeling, Simulation \& Parallel Computing:} CUDA, OpenGL, MATLAB, ImGui \\
+    \textbf{Software Engineering Tools:} Git, CMake/Make, GDB, VS Code/Visual Studio, Microsoft Office \\
+    \textbf{Practices:} Scripting for Build/Test Automation, Validation Workflows, Software Integration
+    }}
  \end{itemize}
 
 

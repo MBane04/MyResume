@@ -127,7 +127,6 @@
 \vspace{-2pt}
 %Embedded
 \textbf{Summary:} Computer Science and Engineering student working across embedded firmware, high-performance simulations, and Linux systems. Builds secure STM32-based telemetry, optimizes CUDA/C++ models for research, and maintains reliable HPC lab environments through automation and documentation. Combines hands-on hardware troubleshooting with clear communication to support research and production teams.
-\vspace{-10pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -142,8 +141,7 @@
       {Hill College}{Hillsboro, TX}
       {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
   \resumeSubHeadingListEnd
-  \vspace{-13pt}
-
+  \vspace{-12pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -157,7 +155,6 @@
        \resumeItem{Collaborated with interdisciplinary teams to create digital twins to model complex problems using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
        \resumeItem{Conducted rigorous testing and debugging of simulation software, ensuring robust performance and reliability while documenting processes to facilitate knowledge transfer and future research initiatives.}
      \resumeItemListEnd
-     \vspace{-1pt}
       
     \resumeSubheading
     {Undergraduate Technology Specialist - HPC Lab Manager}{Aug. 2024 -- Present}
@@ -166,8 +163,7 @@
     \resumeItem{Managed 15+ Linux systems in production-like research environment, ensuring 99\%+ uptime through proactive maintenance, hardware diagnostics, and rapid incident response}
     \resumeItem{Diagnosed and resolved complex hardware/software issues including memory failures, storage degradation, and OS configuration problems, minimizing system downtime and maintaining optimal performance}
     \resumeItem{Developed and maintained comprehensive documentation for system configurations, troubleshooting procedures, and lab protocols, enabling knowledge sharing and process standardization}
-    \esumeItemListEnd
-    \vspace{-10pt}
+    \resumeItemListEnd
 
    \resumeSubheading
      {Undergraduate Lab Instructor, Texas Government}{January 2023 -- December 2023}
@@ -184,7 +180,15 @@
 \section{Projects}
     \resumeSubHeadingListStart
     
-         \resumeProjectHeading
+      \resumeProjectHeading
+    {\textbf{N-body Digital Twin of the Left Atrium} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C, CUDA }}{Aug. 2024 -- Present}
+        \resumeItemListStart
+      \resumeItem{Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial arrhythmias in near real-time.}
+      \resumeItem{Developed an intuitive C++/ImGui interface to control simulation parameters and visualize outputs, bridging the gap between complex computational models and end-user (research/clinical) requirements.}
+      \resumeItem{Presented findings at academic conferences, demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
    {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
    \resumeItemListStart
    \resumeItem{Implementing a secure data pipeline on an STM32H5 MCU, utilizing Arm TrustZone and the Secure Manager to create a hardware-rooted chain of trust for environmental sensor data.}
@@ -192,17 +196,7 @@
    \resumeItem{Structuring firmware to cryptographically sign sensor readings within the secure processing environment for tamper-evident logging.}
    \resumeItem{Utilizing STM32CubeIDE and the HAL for peripheral configuration and hardware security module (HSM) management as a foundation for secure telemetry systems.}
    \resumeItemListEnd
-   \vspace{-2pt}
-   
-  \resumeProjectHeading
-    {\textbf{N-body Digital Twin of the Left Atrium} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C, CUDA }}{Aug. 2024 -- Present}
-        \resumeItemListStart
-      \resumeItem{Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial arrhythmias in near real-time.}
-      \resumeItem{Developed an intuitive C++/ImGui interface to control simulation parameters and visualize outputs, bridging the gap between complex computational models and end-user (research/clinical) requirements.}
-      \resumeItem{Presented findings at academic conferences, demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.}
-        \resumeItemListEnd
-          \vspace{-2pt}
-          
+             
     \resumeProjectHeading
         {\textbf{N-Body Simulation of Microplastic Coagulation} $|$ \emph{C/C++, CUDA, Linux, OpenGL}}{May 2024 -- Aug. 2024}
         \resumeItemListStart
@@ -222,8 +216,59 @@
         \resumeItemListEnd
 
     \resumeSubHeadingListEnd
-        \vspace{-12pt}
 
+    %-----------IN PROGRESS-----------
+\section{In Progress}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{STM32H5 Secure IoT Environmental Sensor Node} $|$ \emph{STM32, C/C++, Security, IoT}}{2026}
+    \resumeItemListStart
+      \resumeItem{Developing a secure embedded sensor node using STM32H573I-DK, leveraging TrustZone and cryptographic accelerators for hardware-rooted telemetry.}
+      \resumeItem{Implements secure boot, HSM, and trusted execution for authenticated environmental data logging.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{DARPA Lift Challenge Drone} $|$ \emph{Autonomous Systems, Robotics, Control}}{2026}
+    \resumeItemListStart
+      \resumeItem{Designing autonomous drone system for DARPA Lift Challenge, focusing on aerial load-lifting, control algorithms, and navigation.}
+    \resumeItemListEnd
+    \vspace{-2pt}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \begin{itemize}
+    \item \textbf{Studying Left Atrial Arrhythmias Using a Real-Time Interactive Digital Twin} \\
+      \textit{Journal:} Heart Rhythm O2 6(9):S2, Sept 2025 \\
+      Authors: Bryant Wyatt, Gavin McIntosh, Avery Campbell, Milanie Little, Brandon Wyatt, Mason Bane, Leah Rogers, Kyla Moore, Conner Homrighaus, Charles Puelz \\
+      Presents a real-time digital twin of the human left atrium for clinical simulation and education. \\
+      \href{https://doi.org/10.1016/j.hroo.2025.07.027}{\textcolor{blue}{\underline{Read Paper}}}
+    \item \textbf{"Offloading" Undergraduate Research to the Graphics Processing Unit for Acceleration} \\
+      \textit{Conference:} EduHPC-25 Workshop, Supercomputing Conference, Nov 2025 \\
+      Authors: Bryant Wyatt, Mason Bane \\
+      Demonstrates GPU parallel processing for accelerating scientific computing in undergraduate research. \\
+      \href{https://dl.acm.org/doi/10.1145/3731599.3767382}{\textcolor{blue}{\underline{Read Paper}}}
+  \end{itemize}
+
+%-----------AWARDS & RECOGNITION-----------
+\section{Awards \& Recognition}
+  \begin{itemize}
+    \item \textbf{President’s List} (All Semesters, 2022–2026), except Fall 2025 \& Spring 2024: \textbf{Dean’s List}
+    \item \textbf{1st Place Poster} — SIAM Texas/Louisiana Chapter 2024
+    \item \textbf{1st Place Undergraduate Poster} — Tarleton REID Conference 2025
+    \item \textbf{1st Place Graduate Poster} — Tarleton REID Conference 2025
+    \item \textbf{Accepted Poster} — NVIDIA GTC 2026
+  \end{itemize}
+
+%-----------PROFESSIONAL MEMBERSHIPS-----------
+\section{Professional Memberships}
+  \begin{itemize}
+    \item SIAM (Society for Industrial and Applied Mathematics)
+    \item SAMPE (Society for the Advancement of Material and Process Engineering)
+    \item IEEE (Institute of Electrical and Electronics Engineers)
+    \item AIAA (American Institute of Aeronautics and Astronautics)
+    \item Tarleton Computer Society
+  \end{itemize}
 %-----------Technical Skills-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
@@ -238,4 +283,9 @@
 
 
 %-------------------------------------------
+\vspace{8pt}
+\begin{center}
+\textit{References available upon request}
+\end{center}
 \end{document}
+%-------------------------
