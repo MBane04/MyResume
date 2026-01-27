@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Mason Bane
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+  \resumeProjectHeading
+  {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
+  \resumeItemListStart
+  \resumeItem{Implemented a secure data pipeline on an STM32H5 MCU using Arm TrustZone and Secure Manager to establish a hardware-rooted chain of trust.}
+  \resumeItem{Developed sensor drivers and application logic for a Bosch BME280 over I2C, ensuring reliable acquisition of environmental data.}
+  \resumeItem{Configured secure peripherals and signing flows to produce tamper-evident telemetry for downstream systems.}
+  \resumeItemListEnd
+  \vspace{-2pt}
+
+  \resumeProjectHeading
+  {\textbf{Analog Pink Noise Generator Circuit} $|$ \emph{LTSpice, Python, MATLAB, Breadboarding}}{Aug. 2025 -- Dec. 2025}
+  \resumeItemListStart
+  \resumeItem{Designed and simulated a BJT-based pink noise generator with active filtering in LTSpice, then validated performance on breadboard hardware.}
+  \resumeItem{Built Python tooling to compare measured spectra against ideal pink noise, guiding component selection and filter tuning.}
+  \resumeItem{Delivered a working audio-output prototype and presented design methodology and data-driven decisions to peers and faculty.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationDetail}[1]{%
+  \vspace{-4pt}\item[]\small{#1}\vspace{-2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mason Bane} \\ \vspace{1pt}
+    \small 817-487-5148 $|$ \href{mailto:mbane0525@gmail.com}{\underline{mbane0525@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mason-bane/}{\underline{linkedin.com/in/mason-bane/}} $|$
+    \href{https://mbane04.github.io}{\underline{mbane04.github.io}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\vspace{-2pt}
+\textbf{Summary:} Computer Engineering student with hands-on hardware experience in circuit design, PCB prototyping, and microcontroller systems. Proficient in hardware analysis tools and low-level programming for complete hardware/software integration. Brings research background and analytical skills to hardware design challenges.
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarleton State University \textnormal}{Stephenville, TX}
+      {Bachelor of Science in Computer Science, Concentration in Computer Engineering}
+      {Aug. 2022 -- May 2026 (Expected)}
+      \educationDetail{Minor in Mathematics}
+      \educationDetail{GPA: 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+   \resumeSubheading
+      {Hill College}{Hillsboro, TX}
+      {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
+  \resumeSubHeadingListEnd
+  \vspace{-13pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Undergraduate Research Assistant - Systems \& Performance}{May 2024 -- Present}
+    {Tarleton State University}{Stephenville, TX}
+    \resumeItemListStart
+    \resumeItem{Developed high-performance simulations in C/C++, applying parallel algorithms on Linux clusters to accelerate computation.}
+    \resumeItem{Worked closely with hardware teams to profile performance and align software with system constraints for reliable runtimes.}
+    \resumeItem{Documented deployment and debugging procedures to support cross-functional teams.}
+    \resumeItemListEnd
+    \vspace{-1pt}
+
+    \resumeSubheading
+    {Undergraduate Technology Specialist - HPC Lab Manager}{Aug. 2024 -- Present}
+    {Tarleton State University}{Stephenville, TX}
+    \resumeItemListStart
+    \resumeItem{Managed 15+ Linux systems and associated hardware, performing diagnostics, repairs, and component replacements to maintain uptime.}
+    \resumeItem{Monitored thermal, memory, and storage health to prevent failures and extend equipment life.}
+    \resumeItem{Maintained organized documentation of hardware configurations and maintenance procedures for repeatability.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+  \resumeSubHeadingListEnd
+    \vspace{-10pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+         \resumeProjectHeading
+   {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
+   \resumeItemListStart
+   \resumeItem{Implementing a secure data pipeline on an STM32H5 MCU, utilizing Arm TrustZone and the Secure Manager to create a hardware-rooted chain of trust for environmental sensor data.}
+   \resumeItem{Developing drivers and application logic to interface with a Bosch BME280 temperature, humidity, and pressure sensor via I2C communication protocol.}
+   \resumeItem{Structuring firmware to cryptographically sign sensor readings within the secure processing environment for tamper-evident logging.}
+   \resumeItem{Utilizing STM32CubeIDE and the HAL for peripheral configuration and hardware security module (HSM) management as a foundation for secure telemetry systems.}
+   \resumeItemListEnd
+   \vspace{-2pt}         
+
+          
+      \resumeProjectHeading
+         {\textbf{Analog Pink Noise Generator Circuit} $|$ \emph{LTSpice, Python, MATLAB, Breadboarding}}{Aug. 2025 -- Dec. 2025}
+         \resumeItemListStart
+           \resumeItem{Designed and prototyped a BJT-based pink noise generator with active filter stage using LTSpice for simulation and breadboarding for physical implementation.}
+           \resumeItem{Developed Python scripts to quantitatively compare simulation results with an ideal pink noise spectrum, guiding component selection and filter tuning for improved accuracy.}
+           \resumeItem{Built a physical demonstration circuit with audio output, successfully verifying simulation models against real-world performance.}
+            \resumeItem{Collaborated in a two-person team to present comprehensive design methodology, results, and data-driven decision process to peers and professors.}
+         \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+        \vspace{-12pt}
+
+
+
+%
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Hardware Platforms}{: STM32 (H5/Cortex-M33), TIVA-C (TM4C), Arduino, Raspberry Pi, ARM Cortex-M} \\
+\textbf{Firmware Development}{: C, C++, ARM Assembly, I²C, SPI, UART, STM32CubeIDE/HAL, RTOS} \\
+\textbf{Circuit Design \& Tools}{: LTSpice, Analog/Digital Circuit Design, PCB Prototyping, Oscilloscope, Multimeter} \\
+\textbf{Development Tools}{: Git, Linux, CMake/Make, GDB, Python, Bash, VS Code} \\
+\textbf{Simulation \& Research}{: MATLAB, CUDA, OpenGL, Blender} 
+}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

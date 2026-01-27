@@ -1,0 +1,190 @@
+%-------------------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+  \resumeProjectHeading
+  {\textbf{HPC Lab Automation \& Monitoring} $|$ \emph{Bash, Linux}}{Jan. 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Automated updates, backups, and log collection across 15+ lab machines using Bash and cron, cutting routine maintenance time and improving consistency.}
+    \resumeItem{Implemented health checks and alerting for disk, memory, and service status to surface issues before they caused downtime.}
+    \resumeItem{Standardized configuration through documented playbooks and scripts, enabling fast rebuilds and reproducible environments.}
+  \resumeItemListEnd
+  \vspace{-2pt}
+
+  \resumeProjectHeading
+  {\textbf{Real-Time Cardiac Simulation Engine} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C/C++, Linux}}{Aug. 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Maintained build and deployment scripts for a 20,000+ node simulation across multiple Linux workstations, improving reliability and reducing setup time.}
+    \resumeItem{Added runtime monitoring and logging hooks to capture performance metrics and errors, simplifying incident response.}
+    \resumeItem{Documented deployment steps and troubleshooting procedures to support researchers and student staff.}
+  \resumeItemListEnd
+  \vspace{-2pt}
+
+  \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationDetail}[1]{%
+  \vspace{-4pt}\item[]\small{#1}\vspace{-2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mason Bane} \\ \vspace{1pt}
+    \small 817-487-5148 $|$ \href{mailto:mbane0525@gmail.com}{\underline{mbane0525@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mason-bane/}{\underline{linkedin.com/in/mason-bane/}} $|$
+    \href{https://mbane04.github.io}{\underline{mbane04.github.io}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\vspace{-2pt}
+\textbf{Summary:} Computer Science and Engineering student with hands-on experience in Linux systems administration, hardware diagnostics, and infrastructure automation. Combines strong troubleshooting skills in hardware and Linux environments with scripting proficiency in Python and Bash. Proven ability to maintain high-availability systems, document processes, and collaborate in technical operations roles. Seeking to apply operational rigor and technical versatility to large-scale data center environments.
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarleton State University \textnormal}{Stephenville, TX}
+      {Bachelor of Science in Computer Science, Concentration in Computer Engineering}
+      {Aug. 2022 -- May 2026 (Expected)}
+      \educationDetail{Minor in Mathematics}
+      \educationDetail{GPA: 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+   \resumeSubheading
+      {Hill College}{Hillsboro, TX}
+      {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
+  \resumeSubHeadingListEnd
+  \vspace{-13pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Undergraduate Research Assistant - Systems \& Performance}{May 2024 -- Present}
+    {Tarleton State University}{Stephenville, TX}
+    \resumeItemListStart
+    \resumeItem{Developed and optimized high-performance computing simulations in C/C++, implementing parallel processing algorithms on Linux clusters.}
+    \resumeItem{Built automated test and deployment scripts to standardize workloads across lab machines and reduce operator effort.}
+    \resumeItem{Created deployment and troubleshooting documentation to accelerate issue resolution and enable peer handoffs.}
+    \resumeItemListEnd
+    \vspace{-1pt}
+
+    \resumeSubheading
+    {Undergraduate Technology Specialist - HPC Lab Manager}{Aug. 2024 -- Present}
+    {Tarleton State University}{Stephenville, TX}
+    \resumeItemListStart
+    \resumeItem{Managed 15+ Linux systems in a research lab, ensuring 99\%+ uptime via proactive maintenance, hardware diagnostics, and rapid incident response.}
+    \resumeItem{Automated updates, backups, and health checks with Bash and cron, cutting routine maintenance time and reducing human error.}
+    \resumeItem{Documented standard operating procedures and troubleshooting runbooks to streamline support and onboarding for student staff.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+         \resumeProjectHeading
+   {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
+   \resumeItemListStart
+   \resumeItem{Implementing a secure data pipeline on an STM32H5 MCU, utilizing Arm TrustZone and the Secure Manager to create a hardware-rooted chain of trust for environmental sensor data.}
+   \resumeItem{Developing drivers and application logic to interface with a Bosch BME280 temperature, humidity, and pressure sensor via I2C communication protocol.}
+   \resumeItem{Structuring firmware to cryptographically sign sensor readings within the secure processing environment for tamper-evident logging.}
+   \resumeItem{Utilizing STM32CubeIDE and the HAL for peripheral configuration and hardware security module (HSM) management as a foundation for secure telemetry systems.}
+   \resumeItemListEnd
+   \vspace{-2pt}
+             
+    %IT Focused
+     \resumeProjectHeading
+    {\textbf{Real-Time Cardiac Simulation Engine} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C/C++, Linux}}{Aug. 2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developed real-time 20,000+ node cardiac model for Linux systems, implementing performance optimizations through parallel algorithms and creating accessible, documented interfaces for end users}
+ \resumeItem{Automated the simulation toolchain with Bash scripts for compilation, testing, and data validation across multiple Linux workstations, ensuring reproducibility and reducing manual setup time}
+\resumeItem{Developed and maintained comprehensive documentation for system architecture, build procedures, and troubleshooting protocols to support collaboration and future research initiatives}
+    \resumeItemListEnd
+    \vspace{-2pt}
+
+    \resumeSubHeadingListEnd
+        \vspace{-12pt}
+
+
+
+%
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+\textbf{Linux \& Systems Administration}{: Linux (administration, troubleshooting), Git, CMake/Make} \\
+\textbf{Hardware \& Server Support}{: Server hardware concepts, diagnostics, oscilloscope, multimeter, GDB} \\
+\textbf{Automation \& Scripting}{: Python, Bash, JavaScript} \\
+\textbf{Networking Concepts}{: DNS, HTTP, DHCP, RAID basics} \\
+\textbf{Programming \& Tools}{: C, C++, ARM Assembly, Java, HTML/CSS}
+}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

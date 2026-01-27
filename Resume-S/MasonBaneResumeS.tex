@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Mason Bane
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationDetail}[1]{%
+  \vspace{-4pt}\item[]\small{#1}\vspace{-2pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mason Bane} \\ \vspace{1pt}
+    \small 817-487-5148 $|$ \href{mailto:mbane0525@gmail.com}{\underline{mbane0525@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mason-bane/}{\underline{linkedin.com/in/mason-bane/}} $|$
+    \href{https://mbane04.github.io}{\underline{mbane04.github.io}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\vspace{-2pt}
+\textbf{Summary:} Computer Science student targeting software engineering roles, with a strong foundation in C++ and performance-oriented development. Brings hands-on experience in high-performance computing (CUDA) from contributing to an NIH-funded research project, alongside proven analytical and problem-solving skills.
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tarleton State University \textnormal}{Stephenville, TX}
+      {Bachelor of Science in Computer Science, Concentration in Computer Engineering}
+      {Aug. 2022 -- May 2026 (Expected)}
+      \educationDetail{Minor in Mathematics}
+      \educationDetail{GPA: 3.94/4.00 (Institutional) | Cumulative: 3.75/4.00}
+   \resumeSubheading
+      {Hill College}{Hillsboro, TX}
+      {Associate of Arts in Liberal Arts}{Aug. 2019 -- Sept. 2023}
+  \resumeSubHeadingListEnd
+  \vspace{-13pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+     {Undergraduate Research Assistant - Lead Programmer}{May 2024 -- Present}
+     {Tarleton State University}{Stephenville, TX}
+     \resumeItemListStart
+       \resumeItem{Developed and optimized of various N-Body simulations utilizing C/C++, enhancing computational efficiency and accuracy through advanced algorithms and parallel processing with CUDA.}
+       \resumeItem{Collaborated with interdisciplinary teams to create digital twins to model complex problems using OpenGL and Blender, translating scientific concepts into interactive simulations and improving data interpretation.}
+       \resumeItem{Conducted rigorous testing and debugging of simulation software, ensuring robust performance and reliability while documenting processes to facilitate knowledge transfer and future research initiatives.}
+     \resumeItemListEnd
+     \vspace{-1pt}
+    
+    \resumeSubheading
+    {Undergraduate Technology Specialist - HPC Lab Manager}{Aug. 2024 -- Present}
+    {Tarleton State University}{Stephenville, TX}
+    \resumeItemListStart
+    \resumeItem{Managed 15+ Linux systems in production-like research environment, ensuring 99\%+ uptime through proactive maintenance, hardware diagnostics, and rapid incident response}
+    \resumeItem{Diagnosed and resolved complex hardware/software issues including memory failures, storage degradation, and OS configuration problems, minimizing system downtime and maintaining optimal performance}
+    \resumeItem{Developed and maintained comprehensive documentation for system configurations, troubleshooting procedures, and lab protocols, enabling knowledge sharing and process standardization}
+    \resumeItemListEnd
+    \vspace{-10pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+
+    \resumeProjectHeading
+			{\textbf{N-body Digital Twin of the Left Atrium} $|$ \emph{NIH Grant \#1R15HL179671-01} $|$ \emph{C, CUDA }}{Aug. 2024 -- Present}
+         \resumeItemListStart
+				\resumeItem{Engineered a parallel N-body model of the left atrium using CUDA, with a 20,000+ node mesh to simulate atrial arrhythmias in near real-time.}
+				\resumeItem{Developed an intuitive C++/ImGui interface to control simulation parameters and visualize outputs, bridging the gap between complex computational models and end-user (research/clinical) requirements.}
+				\resumeItem{Presented findings at academic conferences, demonstrating the tool's potential to improve clinical decision-making and transform training for medical professionals.}
+         \resumeItemListEnd
+           \vspace{-2pt}
+
+         \resumeProjectHeading
+   {\textbf{Secure IoT Sensor Node with Hardware TrustZone} $|$ \emph{C, STM32CubeIDE/HAL, I2C/SPI}}{Dec. 2025 -- Present}
+   \resumeItemListStart
+   \resumeItem{Implementing a secure data pipeline on an STM32H5 MCU, utilizing Arm TrustZone and the Secure Manager to create a hardware-rooted chain of trust for environmental sensor data.}
+   \resumeItem{Developing drivers and application logic to interface with a Bosch BME280 temperature, humidity, and pressure sensor via I2C communication protocol.}
+   \resumeItem{Structuring firmware to cryptographically sign sensor readings within the secure processing environment for tamper-evident logging.}
+   \resumeItem{Utilizing STM32CubeIDE and the HAL for peripheral configuration and hardware security module (HSM) management as a foundation for secure telemetry systems.}
+   \resumeItemListEnd
+   \vspace{-2pt}
+   
+
+            
+          
+    %  \resumeProjectHeading
+    %      {\textbf{N-Body Simulation of Microplastic Coagulation} $|$ \emph{C/C++, CUDA, Linux, OpenGL}}{May 2024 -- Aug. 2024}
+    %      \resumeItemListStart
+    %        \resumeItem{Contributed to the development and optimization a CUDA-based N-body simulation of micro-plastic removal from water using plant polymers -- leveraging NVIDIA's CUDA technology for parallel processing and OpenGL for real-time 3D visualization, enhancing computational efficiency and user experience.}
+    %        \resumeItem{Crafted a user-friendly interface for toggling simulation features, providing enhanced visual cues and aiding in the understanding of complex phenomena.}
+    %        \resumeItem{Collaborated with a multidisciplinary team to define requirements, design features, and refine the simulation tool, ensuring alignment with project goals and user needs.}
+    %      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+        \vspace{-12pt}
+
+
+
+%
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Programming Languages}{: C, C++, Python, ARM Assembly, Java, Bash, HTML/CSS/JavaScript} \\
+\textbf{Parallel Computing \& Graphics}{: CUDA, OpenGL, ImGui, MATLAB, STM32CubeIDE} \\
+\textbf{Systems \& Development}{: Git/GitHub, Linux, CMake, Visual Studio, VS Code, GDB} \\
+\textbf{Microcontroller Platforms}{: STM32, TIVA-C, Arduino, Raspberry Pi} \\
+\textbf{Design \& Simulation}{: LTSpice, Blender} 
+}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
