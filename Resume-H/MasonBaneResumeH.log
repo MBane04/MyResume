@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.5)  27 JAN 2026 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.5)  12 JUN 2026 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,6 +373,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 137.
 
+Overfull \hbox (5.38213pt too wide) in alignment at lines 180--180
+[] [] 
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
@@ -410,7 +414,7 @@ eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mbane/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mbane/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/mbane/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on MasonBaneResumeH.pdf (1 page, 109700 bytes).
+Output written on MasonBaneResumeH.pdf (1 page, 109337 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 500000)
